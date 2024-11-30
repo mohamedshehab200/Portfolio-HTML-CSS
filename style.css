@@ -1,0 +1,467 @@
+:root{
+
+--primarycolor:#ff274d;
+--secondarycolor: #f7bcf7;
+--ilghtcolor: #ffffff; 
+--bgColor-1: #171a1c;
+--bgColor-2: #22282a;
+
+  --padding:8%;
+
+}
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+html{
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+     color: var(--ilghtcolor);
+
+
+}
+.home{
+
+width: 100%;
+height: 100vh;
+background-color:var(--bgColor-1  );
+display: flex;
+flex-direction: column;
+
+
+}
+span{
+color: var(--primarycolor);
+
+}
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+
+}
+nav{
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul li{
+   list-style-type: none;
+   display: inline-block;
+   margin: 0.8rem 1.5rem;
+
+}
+nav ul li a{
+    color: var(--ilghtcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+
+}
+nav ul li a:hover{
+    color: var(--primarycolor);
+
+}
+.btn{
+   background-color: var(--primarycolor);
+   color: var(--ilghtcolor);
+   text-decoration: none;
+   font-weight: bold;
+   padding: 0.81rem 1.87rem ;
+   border-radius: 30px;
+   transition: 0.4s;
+   border: 2px solid transparent;
+
+
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+
+}
+
+.content{
+
+flex-grow: calc(1);
+padding: 0 var(--padding);
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.container-texts{
+    position: relative;
+    bottom: 70px;
+
+
+}
+
+h1{
+font-size: 4.65rem;
+margin: 1.7rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondarycolor);
+}
+h5{
+  color: var(--ilghtcolor);
+  font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.social{
+    margin-top: 3.5rem;
+
+}
+.social img{
+    margin-left: 2rem;
+    width: 2.5rem;
+    border-radius: 58%;
+    transition: 0.4s;
+
+}
+.social img:hover{
+    transform:scale(1.2);
+
+}
+.home .container-images{
+   width: 45%;
+   height: 90%;
+   position: relative;
+   /* background-color: red; */
+   align-self: flex-end;
+
+}
+.container-images img{
+    
+position: absolute;
+bottom: 0;
+height: 100%;
+transition: bottom 1s, left 1s;
+
+}
+.image-container:hover{
+
+    transform:scale(1.2);
+
+
+}
+.mypic{
+width: 80%;
+right: 7px;
+}
+.container-images img:hover{
+
+    bottom: 40px;
+}
+
+.content-section{
+    display: flex; /* استخدام Flexbox لتنسيق العناصر أفقياً */
+    justify-content: space-between; /* ترك مسافات متساوية بين الأقسام */
+    align-items: center; /* محاذاة العناصر عموديًا في المركز */
+    gap: 20px; /* مسافة بين الصورة والنص */
+    padding: var(--padding); /* مسافة داخلية للحاوية */
+    background-color:var(--bgColor-2); /* لون خلفية اختياري */
+    
+
+
+}
+.image-container {
+    flex: 1; /* اجعل الصورة تأخذ مساحة متناسبة */
+    max-width: 50%; /* لا تتجاوز نصف عرض الحاوية */
+    padding: 20px; 
+    transition: 0.8s;
+
+}
+
+.image-container img {
+    width: 80%; /* اجعل الصورة تغطي العرض الكامل للحاوية */
+    height: auto; /* احتفظ بنسبة العرض إلى الارتفاع */
+    border-radius: 10px; /* زوايا مستديرة للصورة */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل للصورة */
+    margin-right: 10px;
+}
+.text-container {
+    flex: 1; /* اجعل النص يأخذ مساحة متناسبة */
+    font-size: 1.2rem; /* حجم الخط */
+    line-height: 1.6; /* ارتفاع الأسطر لتحسين القابلية للقراءة */
+    color:var(--secondarycolor); /* لون النص */
+    text-align: justify; /* محاذاة النص ليكون متناسقًا */
+}
+
+.services{
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+
+}
+.text-center{
+    text-align: center;
+
+}
+.box{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px;
+}
+.card{
+ width: 300px;
+ background-color: var(--bgColor-2);
+ border-radius: 20px;
+ padding: 1.3rem 2rem;
+ margin: 2rem;
+text-align: center;
+transition: 0.4s;
+
+}
+.card i{
+
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primarycolor);
+}
+
+
+.p22{
+    color: var(--secondarycolor);
+}
+
+.container-skills {
+    display: flex;
+    flex-wrap: wrap; /* لجعل العناصر تنتقل إلى السطر التالي عند نقص المساحة */
+    justify-content: center; /* محاذاة العناصر إلى المنتصف */
+    gap: 2rem; /* مسافة بين العناصر */
+    padding: 2rem; /* إضافة مساحة داخلية حول المحتوى */
+}
+.skill {
+    width: 100px;
+    height: 100px;
+    background-color: #fff; /* اللون الأبيض لخلفية الدائرة */
+    border-radius: 50%; /* جعل الشكل دائريًا */
+    display: flex;
+    justify-content: center; /* توسيط المحتوى أفقيًا */
+    align-items: center; /* توسيط المحتوى عموديًا */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف لتحسين التصميم */
+    transition: transform 0.3s ease; /* حركة عند التفاعل */
+}
+
+.skill:hover {
+    transform: scale(1.1); /* تكبير العنصر عند التمرير */
+}
+
+.skill img {
+    width: 85%; /* زيادة عرض الصورة داخل الدائرة */
+    height: 85%; /* الحفاظ على نفس النسبة بين العرض والارتفاع */
+    display: block; /* منع الفراغات أسفل الصور */
+    background-color: #fff; /* خلفية بيضاء للصورة */
+    border-radius: 50%; /* التأكد من أن الصور تتبع الدائرة */
+}
+.card:hover{
+
+    transform:scale(1.2);
+
+}
+footer{
+
+    padding: 2rem var(--padding);
+    background-color: var(--bgColor-1);
+}
+.contaenr-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contaenr-footer .p22{
+    color: var(--ilghtcolor);
+    width: 500px;
+    margin-top: 1rem ;
+    text-align: center;
+}
+.contaenr-footer .end{
+
+    color: var(--primarycolor);
+}
+
+
+
+
+
+
+/* Media Query: الشاشات الصغيرة (الموبايل) */
+@media (max-width: 576px) {
+    /* إزالة Flex Layout وتحويل العناصر إلى صف واحد */
+    .content-section,
+    .services,
+    .home {
+      display: block;
+      padding: 20px 10px;
+    }
+  
+    /* جعل النصوص والصور تتناسب مع الشاشات الصغيرة */
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    h3, h4, h5 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .container-images img,
+    .image-container img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .box {
+      display: block;
+      text-align: center;
+    }
+  
+    .card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .container-skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* عرض عنصرين في كل صف */
+      gap: 1rem;
+    }
+  
+    nav ul {
+      display: none; /* إخفاء القائمة */
+    }
+  
+    nav .btn {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .social img {
+      margin: 0 5px;
+      width: 2rem;
+    }
+  }
+  
+  /* Media Query: الشاشات المتوسطة (التابلت) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    /* ترتيب الأقسام باستخدام Flex */
+    .content-section,
+    .services,
+    .home {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  
+    /* تعديل الكروت والخطوط */
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 45%; /* عرض الكرت يأخذ نصف العرض */
+    }
+  
+    .container-skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* عرض 4 عناصر في كل صف */
+      gap: 1.5rem;
+    }
+  
+    .container-images img,
+    .image-container img {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    nav ul li {
+      margin: 0 1rem;
+    }
+  }
+  
+  /* Media Query: الشاشات الكبيرة (الشاشات العادية) */
+  @media (min-width: 993px) {
+    /* لا تغييرات إضافية للشاشات الكبيرة */
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .box {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .card {
+      width: 23%;
+    }
+  
+    .container-skills {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* ترتيب العناصر عمودياً */
+      align-items: flex-start; /* محاذاة النصوص إلى اليسار */
+      padding: 1rem; /* تقليل الحواف */
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column; /* ترتيب العناصر عمودياً */
+      gap: 1rem; /* إضافة مسافة بين العناصر */
+      width: 100%; /* ملء الشاشة بالكامل */
+    }
+  
+    nav ul li {
+      margin: 0; /* إزالة المسافات الخارجية */
+    }
+  
+    nav ul li a {
+      font-size: 1rem; /* تقليل حجم النص */
+    }
+  
+    .btn {
+      font-size: 0.9rem; /* تقليل حجم النص */
+      padding: 0.6rem 1.2rem; /* تعديل الحواف */
+      align-self: center; /* محاذاة الزر للمنتصف */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* تقليل حجم العنوان */
+      text-align: center; /* محاذاة العنوان للمنتصف */
+    }
+  }
+  
+
+
+
